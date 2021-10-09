@@ -78,6 +78,8 @@ inColor.addEventListener("change", function() {
   clock.style.color = color;
   currentColor = color;
   setCookie("color",color,30)
+  //console.log(currentColor);
+  console.log(clock.style.color)
 })
 
 if (currentTheme === 'dark') {
@@ -88,5 +90,4 @@ if (currentTheme === 'dark') {
     setCookie('theme','dark')
     currentTheme = getCookie('theme')
   }
-
 clock.style.color = currentColor;
