@@ -69,5 +69,6 @@ if (currentTheme === 'dark') {
     document.getElementById('body').classList.remove('theme--light');
   } else if (currentTheme === 'light') {
     document.getElementById('body').classList.add('theme--light')
+  } else if (currentTheme == null) {
+    setCookie('theme','dark')
   }
-

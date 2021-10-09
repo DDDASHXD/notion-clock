@@ -34,7 +34,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 25px;
+  padding: 5px 0px;
+  cursor: pointer;
 }
 
 .wrapper:hover .settings {
