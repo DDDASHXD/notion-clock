@@ -40,16 +40,20 @@ body {
     
     i {
       transition: transform 0.25s ease;
-    }
-    
-    
-    
-    &:hover {
-      i {
+      &:hover {
         transform: rotate(90deg);
         transform-origin: center;
       }
     }
+
+    input {
+      color: black;
+    }
+    
+    
+    
+    
+    
   }
   
   .time {

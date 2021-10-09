@@ -59,11 +59,15 @@ body {
   transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
-.wrapper .settings:hover i {
+.wrapper .settings i:hover {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+.wrapper .settings input {
+  color: black;
 }
 
 .wrapper .time {

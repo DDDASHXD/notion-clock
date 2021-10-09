@@ -50,8 +50,14 @@ function getCookie(name) {
     return null;
 }
 
+var inColor = document.getElementById('color')
+var clock = document.getElementById('time')
+var color = inColor.value
 var currentTheme = getCookie("theme")
-console.log(currentTheme)
+var currentColor = getCookie("color")
+inColor.value = currentColor;
+console.log('Current theme: ' + currentTheme)
+console.log('Current color: ' + currentColor)
 
 function toggleTheme() {
   if (currentTheme === 'dark') {
@@ -65,6 +71,15 @@ function toggleTheme() {
   }
 }
 
+
+
+inColor.addEventListener("change", function() {
+  color = inColor.value;
+  clock.style.color = color;
+  currentColor = color;
+  setCookie("color",color,30)
+})
+
 if (currentTheme === 'dark') {
     document.getElementById('body').classList.remove('theme--light');
   } else if (currentTheme === 'light') {
@@ -73,3 +88,5 @@ if (currentTheme === 'dark') {
     setCookie('theme','dark')
     currentTheme = getCookie('theme')
   }
+
+clock.style.color = currentColor;
