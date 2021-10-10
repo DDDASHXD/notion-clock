@@ -53,8 +53,8 @@ function getCookie(name) {
 var inColor = document.getElementById('color')
 var clock = document.getElementById('time')
 var color = inColor.value
-var currentTheme = getCookie("theme")
-var currentColor = getCookie("color")
+var currentTheme = getCookie("themeThree")
+var currentColor = getCookie("colorThree")
 inColor.value = currentColor;
 console.log('Current theme: ' + currentTheme)
 console.log('Current color: ' + currentColor)
@@ -62,12 +62,12 @@ console.log('Current color: ' + currentColor)
 function toggleTheme() {
   if (currentTheme === 'dark') {
     document.getElementById('body').classList.add('theme--light');
-    setCookie("theme","light",30);
-    currentTheme = getCookie("theme")
+    setCookie("themeThree","light",30);
+    currentTheme = getCookie("themeThree")
   } else if (currentTheme === 'light') {
     document.getElementById('body').classList.remove('theme--light')
-    setCookie("theme","dark",30)
-    currentTheme = getCookie("theme")
+    setCookie("themeThree","dark",30)
+    currentTheme = getCookie("themeTree")
   }
 }
 
@@ -77,7 +77,7 @@ inColor.addEventListener("change", function() {
   color = inColor.value;
   clock.style.color = color;
   currentColor = color;
-  setCookie("color",color,30)
+  setCookie("colorThree",color,30)
   //console.log(currentColor);
   console.log(clock.style.color)
 })
@@ -87,7 +87,7 @@ if (currentTheme === 'dark') {
   } else if (currentTheme === 'light') {
     document.getElementById('body').classList.add('theme--light')
   } else if (currentTheme == null) {
-    setCookie('theme','dark')
-    currentTheme = getCookie('theme')
+    setCookie('themeThree','dark')
+    currentTheme = getCookie('themeThree')
   }
 clock.style.color = currentColor;
