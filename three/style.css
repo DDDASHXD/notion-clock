@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+body {
+  background: #2F3437;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.wrapper:hover .settings {
+  opacity: 0.4;
+}
+
+.wrapper .settings {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.wrapper .settings i {
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.wrapper .settings i:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.wrapper .settings input {
+  color: black;
+}
+
+.wrapper .time {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.wrapper .date {
+  font-size: 20px;
+}
+
+body {
+  -webkit-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+
+.theme--light {
+  background: #ffffff;
+}
+
+.theme--light .wrapper .settings i {
+  color: black;
+}
+
+.theme--light .wrapper .time {
+  color: black;
+}
+
+.theme--light .wrapper .date {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
