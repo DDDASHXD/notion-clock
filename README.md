@@ -23,11 +23,11 @@ This however does mean that when changing to a different device, you will have t
 
 1. Go to any notion page
 2. type /embed
-3. Enter the link `[dddashxd.github.io/notion-clock](http://dddashxd.github.io/notion-clock)`
+3. Enter the link `dddashxd.github.io/notion-clock`
 4. Hit embed, and boom! bob's your uncle.
 
 ### Multiple pages? No problem!
 
 If you wan't to add the clock to more pages, that have different themes, i've created multiple instances of the clock.
 
-You just simply enter `[dddashxd.github.io/notion-clock/two](http://dddashxd.github.io/notion-clock/two)` or `/three` (More might be added in the future) into the embed link box.
+You just simply enter `dddashxd.github.io/notion-clock/two` or `/three` (More might be added in the future) into the embed link box.
